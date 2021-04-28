@@ -49,6 +49,6 @@
 	\sbox{\answerspacebox}{\parbox{\columnwidth}{#1}}
 	\setlength{\answerspaceheight}{\ht\answerspacebox}	% Height
 	\addtolength{\answerspaceheight}{\dp\answerspacebox}% Depth
-	\ifthenelse{\boolean{@answer}}{\usebox{\answerspacebox}}{\vspace{\answerspaceheight}}%
+	\ifthenelse{\boolean{@answer}}{\usebox{\answerspacebox}}{\vspace*{\answerspaceheight}\newline}%
 }
 \endinput
